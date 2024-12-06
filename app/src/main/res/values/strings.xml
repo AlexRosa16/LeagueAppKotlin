@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LeagueApp</string>
+    <string name="hintusuario">Usuario</string>
+    <string name="tied_user">Usuario</string>
+    <string name="hintpass">Password</string>
+    <string name="tied_password">Password</string>
+    <string name="btn_Login">Login</string>
+    <string name="tx_bienvenido">Bienvenido de nuevo</string>
+    <string name="tx_login">Iniciar Sesion</string>
+    <string name="tx_registrar">Registrarme</string>
+    <string name="Btn_Wikipedia">Wiki</string>
+    <string name="Recordar_datos">Recordar</string>
+    <string name="error_user_empty">Por favor, introduce un usuario</string>
+    <string name="error_password_empty">Por favor, introduce una contraseña</string>
+</resources>

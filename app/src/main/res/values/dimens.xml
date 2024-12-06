@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="noticierotitle">64sp</dimen>
+    <dimen name="middle_margin">128dp</dimen>
+    <dimen name="lowmargin">16dp</dimen>
+    <dimen name="verylowmargin">8dp</dimen>
+    <dimen name="verylowpadding">8dp</dimen>
+    <dimen name="width150">150dp</dimen>
+    <dimen name="height150">150dp</dimen>
+    <dimen name="ts12">12sp</dimen>
+    <dimen name="ts14">14sp</dimen>
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="lowpadding">16dp</dimen>
+    <dimen name="width270dp">270dp</dimen>
+    <dimen name="heighthigh">180dp</dimen>
+    <dimen name="width300dp">300dp</dimen>
+    <dimen name="height300dp">300dp</dimen>
+    <dimen name="textsizelow">24sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="lowestmargin">4dp</dimen>
+    <dimen name="width40dp">40dp</dimen>
+    <dimen name="height40dp">40dp</dimen>
+</resources>

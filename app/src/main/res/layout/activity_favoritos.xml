@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FavoritosActivity">
+
+
+    <ImageView
+        android:id="@+id/fondoFavoritos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dianaluna" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFavoritos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/lowpadding"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</FrameLayout>

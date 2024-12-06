@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin32"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewCardsItem"
+            android:layout_width="@dimen/width150"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewTituloCardsItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/rojo"
+            android:paddingTop="@dimen/verylowpadding"
+            android:textAlignment="center"
+            android:textSize="@dimen/textsizelow"
+            app:layout_constraintTop_toTopOf="@id/imageViewCardsItem"
+            app:layout_constraintStart_toEndOf="@id/imageViewCardsItem"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTipoItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textColor="@color/gris_pizarra"
+            android:paddingTop="@dimen/verylowpadding"
+            android:textAlignment="center"
+            android:textSize="@dimen/textsizelow"
+
+            app:layout_constraintTop_toBottomOf="@id/textViewTituloCardsItem"
+            app:layout_constraintStart_toEndOf="@id/imageViewCardsItem"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewStatsItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/verylowpadding"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/textViewTipoItem"
+            app:layout_constraintStart_toEndOf="@id/imageViewCardsItem"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/ntButtonLoginItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/rojo"
+            android:text="@string/Btn_Wikipedia"
+            app:layout_constraintTop_toBottomOf="@id/textViewStatsItem"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

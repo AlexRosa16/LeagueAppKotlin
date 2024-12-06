@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin32"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/height300dp">
+
+        <ImageView
+            android:id="@+id/imageViewCardsCampeon"
+            android:layout_width="@dimen/width150"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <Button
+            android:id="@+id/imageViewMegustaCardsCampeon"
+            android:layout_width="@dimen/width40dp"
+            android:layout_height="@dimen/height40dp"
+            android:background="@drawable/ic_favorite_off"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+        <TextView
+            android:id="@+id/textViewTituloCardsCampeon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/rojo"
+            android:paddingTop="@dimen/verylowpadding"
+            android:textAlignment="center"
+            android:textSize="@dimen/textsizelow"
+            app:layout_constraintTop_toTopOf="@id/imageViewCardsCampeon"
+            app:layout_constraintStart_toEndOf="@id/imageViewCardsCampeon"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewDescripcionCardsCampeon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textColor="@color/gris_pizarra"
+            android:textAlignment="center"
+            android:textSize="@dimen/textsizelow"
+            app:layout_constraintTop_toBottomOf="@id/textViewTituloCardsCampeon"
+            app:layout_constraintStart_toEndOf="@id/imageViewCardsCampeon"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewHabilidadesCampeon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/verylowpadding"
+            android:textAlignment="textStart"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescripcionCardsCampeon"
+            app:layout_constraintStart_toEndOf="@id/imageViewCardsCampeon"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/ntButtonLoginCampeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/rojo"
+            android:text="@string/Btn_Wikipedia"
+            app:layout_constraintTop_toBottomOf="@id/textViewHabilidadesCampeon"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

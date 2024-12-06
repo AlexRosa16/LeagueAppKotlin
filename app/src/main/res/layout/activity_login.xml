@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ntImageViewFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dianaluna"
+        android:scaleType="centerCrop"
+        android:alpha="0.9" />
+
+
+    <ImageView
+        android:id="@+id/ntImageViewTitulo"
+        android:layout_width="@dimen/width270dp"
+        android:layout_height="@dimen/heighthigh"
+        android:layout_marginTop="@dimen/middle_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/leaguelogo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CvCardviewlogin"
+        android:layout_width="@dimen/width300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/verylowmargin"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/verylowpadding"
+        app:cardElevation="@dimen/verylowpadding"
+        app:layout_constraintTop_toBottomOf="@id/ntImageViewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/lowpadding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsizelow"
+                android:textStyle="bold"
+                android:text="@string/tx_bienvenido"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/lowestmargin"
+                android:layout_marginBottom="@dimen/verylowmargin"
+                android:text="@string/tx_login"
+                android:textColor="@color/rojo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ntTextInputLayoutuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintusuario"
+                app:hintTextColor="@color/rojo"
+                app:boxStrokeColor="@color/rojo"
+                android:layout_marginBottom="@dimen/lowmargin"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@android:color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ntTextInputEditTextuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tied_user" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ntTextInputLayoutpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hintpass"
+                app:hintTextColor="@color/rojo"
+                app:boxStrokeColor="@color/rojo"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@android:color/white"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_visibility_off">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ntTextInputEditTextpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:text="@string/tied_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/CheckboxRecordar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Recordar_datos"
+                android:textColor="@color/black"
+               />
+
+
+            <TextView
+                android:id="@+id/TvCambiarVista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿No tienes cuenta? Registrarse"
+                android:textSize="@dimen/ts14"
+                android:textColor="@color/rojo"
+                android:layout_marginBottom="@dimen/lowmargin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ntButtonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/rojo"
+                android:text="@string/btn_Login"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
